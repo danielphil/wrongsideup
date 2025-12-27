@@ -1,5 +1,6 @@
 from pdfmerger.reorder import two_sided_reorder_inplace
 import wx
+import wx.adv
 import threading
 import os
 
@@ -32,6 +33,8 @@ def run_gui():
 
     header = wx.StaticText(panel, label="Drag and drop PDF files into this window to correctly order pages in a two sided scan.")
     main_sizer.Add(header, 0, wx.ALL | wx.ALIGN_CENTER, 10)
+    link = wx.adv.HyperlinkCtrl(panel, label="Click here for instructions", url="https://danielphil.github.io/projects/scanning")
+    main_sizer.Add(link, 0, wx.ALL | wx.ALIGN_CENTER, 5)
 
     # List control to show filename and status
     list_ctrl = wx.ListCtrl(panel, style=wx.LC_REPORT | wx.BORDER_SUNKEN)

@@ -1,0 +1,8 @@
+altgraph==0.17.5
+macholib==1.16.4
+packaging==25.0
+pyinstaller==6.17.0
+pyinstaller-hooks-contrib==2025.11
+pypdf==6.0.0
+setuptools==80.9.0
+wxPython==4.2.4
